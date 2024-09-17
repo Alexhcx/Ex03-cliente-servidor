@@ -378,7 +378,7 @@ public class InterfaceEx03 extends JFrame {
     }
 
     private void carregarDadosAlunos() {
-        alunosModel.setRowCount(0);  // Limpa a tabela
+        alunosModel.setRowCount(0);
         List<Alunos> alunos = alunoDAO.findAll();
         for (Alunos aluno : alunos) {
             alunosModel.addRow(new Object[]{aluno.getMatricula(), aluno.getNome(), aluno.getTelefone(),
@@ -387,7 +387,7 @@ public class InterfaceEx03 extends JFrame {
     }
 
     private void carregarDadosCursos() {
-        cursosModel.setRowCount(0);  // Limpa a tabela
+        cursosModel.setRowCount(0);
         List<Curso> cursos = cursoDAO.findAll();
         for (Curso curso : cursos) {
             cursosModel.addRow(new Object[]{curso.getCodigo(), curso.getNome(), curso.getSigla(), curso.getArea()});
