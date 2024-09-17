@@ -406,9 +406,9 @@ public class InterfaceEx03 extends JFrame {
     private void limparCamposAlunos(JTextField campoNome, JTextField campoTelefone, JComboBox<String> comboCurso, ButtonGroup sexoGroup, JCheckBox checkMaioridade) {
         campoNome.setText("");
         campoTelefone.setText("");
-        comboCurso.setSelectedIndex(0);  // Volta para "Selecione um curso"
-        sexoGroup.clearSelection();  // Limpa seleção dos radio buttons
-        checkMaioridade.setSelected(false);  // Desmarca a checkbox
+        comboCurso.setSelectedIndex(0);
+        sexoGroup.clearSelection();
+        checkMaioridade.setSelected(false);
     }
 
 
